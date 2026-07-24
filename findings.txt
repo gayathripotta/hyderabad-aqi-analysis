@@ -1,0 +1,15 @@
+AIR QUALITY FINDINGS SUMMARY
+=============================
+
+Most polluted station (on average):
+  Bollaram Industrial Area, Hyderabad, India - average AQI 156.0
+
+Worst hour of the day (on average):
+  9:00 - average AQI 56.2
+
+Number of anomalies (unusual spikes) found: 0
+
+Write your own one-paragraph explanation here about WHY you think
+these anomalies happened (check the weather_readings table for clues:
+low wind speed and high humidity often make pollution worse).
+Across all nine monitored stations, Bollaram Industrial Area recorded the highest AQI at 156, more than 60 points above the next-highest station and over 10 times higher than the cleanest station (Central University, AQI 4). Since Bollaram Industrial Area's name indicates it's an industrial zone, this gap is more likely explained by local industrial emissions than by short-term weather changes, especially since AQI values stayed constant across the data collection period rather than fluctuating with wind speed or humidity. This suggests future monitoring at Bollaram in particular could help track whether pollution levels there change with production activity or time of day, once station-level updates refresh more frequently.

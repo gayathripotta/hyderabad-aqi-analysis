@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hyderabad Air Quality Analysis</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b1220;
+  color: #e8eef9;
+  line-height: 1.7;
+}
+.container { width: 90%; max-width: 1050px; margin: auto; }
+header {
+  padding: 75px 0 55px;
+  background: linear-gradient(135deg,#142d4e,#142044,#31265a);
+}
+.tag { color: #75d6d0; font-weight: bold; }
+h1 { font-size: clamp(32px,5vw,52px); line-height: 1.15; }
+h2 { color: #78d8d0; margin-top: 40px; }
+p { color: #bdc9dc; }
+.card {
+  background: #17243a;
+  border: 1px solid #2b3c56;
+  padding: 22px;
+  border-radius: 14px;
+  margin: 15px 0;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+.stat strong { display:block; font-size: 32px; color:#78d8d0; }
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 15px;
+}
+a { color:#78d8d0; }
+.button {
+  display:inline-block;
+  padding:12px 20px;
+  background:#1c9e9b;
+  color:white;
+  text-decoration:none;
+  border-radius:8px;
+  margin:12px 8px 0 0;
+}
+footer {
+  margin-top:60px;
+  padding:25px;
+  text-align:center;
+  background:#101b2d;
+  color:#9baac1;
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container">
+<p class="tag">DATA ANALYTICS PROJECT | HYDERABAD, INDIA</p>
+<h1>Hyderabad Air Quality Analysis</h1>
+<p>
+Understanding air pollution through data analytics,
+Python, SQL and Power BI.
+</p>
+<a class="button" href="#dashboard">View Dashboard</a>
+<a class="button" href="#findings">View Findings</a>
+</div>
+</header>
+
+<main class="container">
+
+<section>
+<h2>About the Project</h2>
+<div class="card">
+<p>
+This project analyses air quality across nine monitoring
+stations in Hyderabad. I collected air quality and weather
+information using real-time APIs and used SQL, Python,
+Pandas and Power BI to analyse and visualize the data.
+</p>
+<p>
+The main objective is to help people understand air
+pollution in different areas and make informed decisions
+about their surroundings.
+</p>
+</div>
+</section>
+
+<section>
+<h2>Project Overview</h2>
+<div class="stats">
+<div class="card stat">
+<strong>9</strong>
+Monitoring stations
+</div>
+<div class="card stat">
+<strong>2</strong>
+API data sources
+</div>
+<div class="card stat">
+<strong>156</strong>
+Highest recorded AQI
+</div>
+</div>
+</section>
+
+<section>
+<h2>Problem Statement</h2>
+<div class="card">
+<p>
+Air pollution levels can vary across different locations
+in a city. This project compares air quality readings from
+multiple Hyderabad monitoring stations to identify areas
+with higher pollution levels.
+</p>
+</div>
+</section>
+
+<section>
+<h2>Technologies Used</h2>
+<div class="card">
+<p><strong>SQL (SQLite):</strong> Data storage and querying</p>
+<p><strong>Python:</strong> Data collection and analysis</p>
+<p><strong>Pandas:</strong> Data cleaning and processing</p>
+<p><strong>Power BI:</strong> Interactive data visualization</p>
+<p><strong>APIs:</strong> WAQI and Open-Meteo</p>
+</div>
+</section>
+
+<section id="dashboard">
+<h2>Power BI Dashboard</h2>
+<div class="card">
+<p>
+The dashboard presents air quality comparisons,
+AQI indicators and important insights from the analysis.
+</p>
+<img src="aqi_dashboard.png"
+alt="Hyderabad Air Quality Power BI Dashboard">
+</div>
+</section>
+
+<section>
+<h2>Air Quality Trend Analysis</h2>
+<div class="card">
+<img src="aqi_trend_chart.png"
+alt="Air Quality Trend Chart">
+</div>
+</section>
+
+<section id="findings">
+<h2>Key Findings</h2>
+<div class="card">
+<p>
+In the collected project dataset, Bollaram Industrial Area
+recorded the highest AQI at 156, while Central University
+recorded an AQI of 4.
+</p>
+<p>
+This comparison highlights differences in recorded air
+quality across the monitored locations.
+</p>
+</div>
+</section>
+
+<section>
+<h2>Impact on People</h2>
+<div class="card">
+<p>
+This project demonstrates how data analytics can make
+environmental information easier to understand. It can
+help people become aware of air quality in their areas
+and consider appropriate precautions.
+</p>
+</div>
+</section>
+
+<section>
+<h2>Project Documentation</h2>
+<div class="card">
+<p>Explore the project documentation and methodology.</p>
+<a href="README.md">Project README</a>
+<br>
+<a href="USER_MANUAL.md">User Manual</a>
+<br>
+<a href="findings.txt">Analysis Findings</a>
+</div>
+</section>
+
+<section>
+<h2>Important Note</h2>
+<p>
+This website presents the analysis and findings from the
+data collected during project development. It is a
+project showcase and does not currently provide continuous
+live API updates.
+</p>
+</section>
+
+</main>
+
+<footer>
+<p>Hyderabad Air Quality Analysis | Data Science Project</p>
+<p>Designed and developed by Gayathri Nagalakshmi Potta</p>
+</footer>
+
+</body>
+</html>
